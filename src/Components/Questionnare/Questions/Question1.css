@@ -1,0 +1,380 @@
+
+.content-container {
+  display: flex;
+  gap: 10px; /* Adjust the gap between the crossboxes */
+  margin-top: 40px;
+}
+
+  .header-container {
+    display: flex;
+    align-items: center;
+    gap:170px;
+
+  }
+
+  .rectangle-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f58a06;
+    color: white;
+    width: 500px;
+    height: 50px;
+    border-radius: 8px;
+  }
+  
+  .rectangle-box h2 {
+    text-align: center;
+    font-size: xx-large;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  
+  .arrow-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 0;
+    border-style: solid;
+    border-width: 15px 15px 15px 0;
+    border-color: transparent #3bca02 transparent transparent;
+    font-weight: bold;
+    font-size: xx-large;
+  }
+  
+  .arrow-box a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 20px;
+  }
+  
+  .arrow-left {
+    margin-right: 10px; /* Adjust the margin as needed */
+    margin-left: 15px;
+  }
+  
+  .arrow-right {
+    margin-right: 20px; /* Adjust the margin as needed */
+  }
+  .Question {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #49c670;
+    width: 3350px; /* Adjust rectangle box width */
+    height: 60px; /* Adjust rectangle box height */
+    margin-top: 10px;
+    font-size: medium;
+    color: white;
+    zoom: 0.7;
+  }
+  
+  .question-text {
+    flex: 1;
+    display: flex;
+    justify-content: space-between; 
+    align-items:flex-start;
+    padding: 0 20px; 
+    font-size: bold;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    zoom:2px;
+  }
+  
+  
+  /* this is the rectangle like containerer that holds the scope and its content */
+  .home-page-crossbox {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 10px 10px 10px rgba(224, 224, 224, 0.1);
+    display: flex;
+    margin-top: 10px;
+    margin-left: 30px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width: 70%; /* Adjust the width to leave room for the additional box */
+    box-shadow: 10px 10px 10px rgb(194, 190, 190);
+    zoom: 1.1;
+  }
+  
+
+  .scope-container {
+    display: flex;
+    align-items: flex-start; /* Align items to the top */
+    gap: 90px; /* Adjust the width between scope and table */
+    margin-top: 5px; /* Add margin from above */
+  }
+  .scope-content {
+    padding: 10px;
+    flex: 0 0 800px;
+    box-sizing: border-box;
+    margin-right: 60px;
+    margin-top: 0px;
+  }
+  
+  /* Step 3 css */
+  .transparent-box3 {
+    background-color: #e7e5e5; /* Transparent white background  on top of the upload buttons*/
+    padding: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    border-radius: 10px;
+    zoom: 0.6;
+    margin-left: 150px;
+    border: 3px solid blue;
+    width: 500px;
+  }
+  
+  .upload-container3 {
+    flex:1;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 6px;
+  }
+  
+  .custom-file-upload {
+    background-color: rgb(231, 200, 22);
+    color: rgb(20, 20, 20);
+    padding: 10px  5px;
+    cursor: pointer;
+    border-radius: 10px;
+    width:200px;
+   
+  }
+  
+  .documentation-text {
+    flex: 1;
+    padding-left: 10px;
+    color: rgb(0, 0, 0);
+    font-size: medium;
+    font-weight: bold;
+    margin-left: 25px;
+    margin-right: 10px;  
+  }
+  
+  .scope-content {
+    
+    margin-left: 0; /* Adjust the margin-left to 0 or as needed */
+    width: 60%; /* Make it span the entire width of the container */
+   margin-top: 0px;
+  }
+  
+  /*   Step 1 css */
+  .subtitle {
+    margin-left: 0px;
+  margin-top: 0px;
+  font-weight: xx-large; /* Make the font bolder */
+  font-size: 58; 
+  }
+  
+  
+  .selectedOption-crossbox{
+  font-size: bolder;
+  }
+  .checkbox-containers {
+    font-family: montserrat;
+    margin-left: 20px;
+  margin-top: 0px;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: fit-content; /* Adjust the width as per your layout */
+  gap: 10px; /* Adjust the gap between columns */
+  font-size: bold;
+  }
+  
+  .checkbox-options {
+  flex: 1; /* Distribute the checkboxes evenly in columns */
+  font-size: bolder;
+  }
+  
+  .checkbox-options label {
+  display: block;
+  margin-top: 5px;
+  margin-bottom: 5px; /* Add space between each checkbox option */
+  }
+  
+  
+  .TextAreaContainer{
+  background-color: #25a505;
+  }
+  /*   Step progress bar css */
+  .progress-bar {
+    display:flex;
+    margin-left: 230px;
+    margin-top: 5px;
+    user-select: none;
+    gap:60px;
+    zoom: 0.8;
+  }
+  .container .progress-bar .step p{
+    font-weight: 500;
+    font-size: bold;
+    color: #000;
+    margin-bottom: 5px;
+  }
+  
+  .progress-bar .step {
+    width: fit-content; /* Adjust the width to make them fit in one row */
+    text-align: center; /* Center-align step content */
+    font-size: 18px; /* Increase the font size */
+  }
+  .progress-bar .step .bullet {
+    height: 25px;
+    width: 25px;
+    border: 2px solid #000;
+    display: inline-block;
+    border-radius: 50%;
+    transition: 0.2s;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 25px;
+    
+    
+  }
+  .progress-bar .step .step-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  
+  .progress-bar .step .bullet.active {
+    border-color: #069fdb;
+    background: #015358;
+  }
+  .progress-bar .step .bullet.active span {
+    display: none;
+  }
+  .progress-bar .step .bullet:before,
+  .progress-bar .step .bullet:after {
+    /* Remove the absolute positioning */
+    content: '';
+    height: 3px;
+    width: 75px; 
+    margin-left: 15px;
+    margin-top: 10px;
+    background: #1eb9ce;
+    position: absolute ; 
+  }
+  
+  .progress-bar .step .bullet.active:after {
+    background: #888888;
+    transform: scaleX(0);
+    transform-origin: left;
+    animation: animate 0.3s linear forwards;
+    z-index: -1; /* Place the line behind the progress steps */
+  }
+  
+  @keyframes animate {
+    100% {
+      transform: scaleX(1);
+    }
+  }
+  
+  .progress-bar .step p.active {
+    color: #56bfdf;
+    transition: 0.2s linear;
+  }
+  
+  .progress-bar .step .check {
+    /* Adjust the positioning */
+    font-size: 15px;
+    display: none;
+  }
+  
+  .progress-bar .step .check.active {
+    display: block;
+    color: #fff;
+  }
+  
+  /*  Navigation buttons at the button ofthe page css */
+  .nav-buttons{
+    margin-top:20px ;
+    display:flex;
+    justify-content: space-between ;
+    gap:640px;
+   
+    height: 34px;
+  }
+  .previousButton{
+    background-color: #df0a0a;
+    border-color: #ff0000;
+    border-radius: 14px;
+    color: white;
+    width: 140px;
+    
+  }
+  .NextButton{
+    background-color: #02910e;
+    border-color: #02910e;
+    color: white;
+    border-radius: 14px;
+    width:140px;
+    
+  }
+
+  
+/* Set fixed width for table cells */
+.TableContainer2 {
+  flex: 1; /* Take remaining available width */
+  padding: 20px;
+  box-sizing: border-box;
+  zoom:0.7;
+  
+}
+
+.TableContainer2 table {
+  width: 100%;
+  height: 50px;
+  border-collapse: collapse;
+  font-size: larger;
+  font-weight: bold;
+  background-color: white;
+  
+  margin-left: 30px;
+  
+}
+
+/* Set fixed width for table cells */
+.TableContainer2 td {
+  border: 1px solid #333;
+  padding: 15px;
+  width: 25px; /* Adjust the width as needed */
+ /* Ensure cells don't become too narrow */
+  text-align: center; /* Center content horizontally */
+  font-size: larger;
+}
+
+
+  /* Table cells css */
+  .table{
+     zoom: 0.5;
+     width: 1700px;
+     height: 209px;
+     margin-left: 15px;
+      border: none;
+  }
+  .TableHeader{
+    background-color: blue;
+    color: white;
+   font-size: larger;
+   height: 50px;
+  }
+  .TableContainer2 title{
+   font-size: larger;
+  }
+  .table-cell {
+    border: 1px solid #333;
+    padding: 15px;
+    width: 25px; /* Adjust the width as needed */
+   /* Ensure cells don't become too narrow */
+    text-align: center; /* Center content horizontally */
+  
+  }
+  
+  
+  
+  

@@ -1,0 +1,58 @@
+/* HomePageContainer.css */
+
+.container {
+    display: flex;
+    gap: 10px; /* Adjust the gap between the crossboxes */
+    margin-top: 40px;
+  }
+  
+  .left {
+    margin-top: 70px;
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .left h1 {
+    color: #2f6461;
+    font-size: 64px;
+  }
+  
+  .left h4 {
+    margin-top: 60px;
+    font-size: 30px;
+  }
+  
+  .left button {
+    margin-top: 20px;
+    background-color: darkgreen;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 4px;
+    height: 70px;
+    font-size: 14px;
+    font-weight: bolder;
+  }
+  
+  .right {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+  }
+  
+  /* Style the image to fit within the right section */
+  .right img {
+    margin-top: -10px; /* Adjust the margin to cover the top border */
+    margin-bottom: 10px;
+    width: 100%; /* Set the image width to 100% of the container */
+    max-width: 700px; /* Set a maximum width for the image */
+    height: 700px; /* Maintain the aspect ratio */
+    border-radius: 10px; /* Add a border-radius for a rounded appearance */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+    border-top: 10px solid darkgreen; /* Add a top border to cover the gap */
+  }
+  
