@@ -1,10 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './HomePageContainer.css'; // Import a CSS file for styling
-
+import NavigationBar from '../NavigationBar/NavigationBar';
 function HomePageContainer() {
   return (
+    
     <div className="container">
+      
       {/* Left Side */}
       <div className="left">
         <h1>Are you fit for applying Green Loan?</h1>

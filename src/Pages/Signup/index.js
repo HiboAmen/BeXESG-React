@@ -67,7 +67,7 @@ export default function Signup() {
                         <input ref={confirmPasswordRef} required name='password' type='password' />  
                     </Container>
 
-                    <button disabled={loading} onSubmit={handleOnSubmit}> Login </button>
+                    <button disabled={loading} onSubmit={handleOnSubmit}> Signup </button>
                     <div className='login-link-container'>
                     <span>Already a member?</span>
                     <Link to='/auth/login'> Log In </Link>
