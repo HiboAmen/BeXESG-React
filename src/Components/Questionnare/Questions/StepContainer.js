@@ -48,31 +48,28 @@ function StepContainer({
   const handleStepNavigation = (direction) => {
     if (direction === "previous" && activeStep > 0) {
       setActiveStep(activeStep - 1);
-    } else if (
-      direction === "next" &&
-      activeStep < currentQuestion?.questions[0]?.steps?.length - 1
-    ) {
+    } else if (direction === "next" && activeStep < currentQuestion?.questions[0]?.steps?.length - 1) {
       const hasTables = currentQuestion?.questions[0]?.steps?.some(
         (step) => step.tables && step.tables.length > 0
       );
-
-      const hasUploadButtons =
-        currentQuestion?.questions[0]?.steps?.[activeStep]?.uploadButtons
-          ?.length > 0;
-
-      const hasReviewSections =
-        currentQuestion?.questions[0]?.steps?.[activeStep]?.reviewSections
-          ?.length > 0;
-
-      if (hasTables || hasUploadButtons || hasReviewSections) {
+  
+      const hasUploadButtons = currentQuestion?.questions[0]?.steps?.[activeStep]?.uploadButtons?.length > 0;
+      const hasReviewSections = currentQuestion?.questions[0]?.steps?.[activeStep]?.reviewSections?.length > 0;
+  
+      // Check if at least one option is selected
+      const isOptionSelected = currentStep?.selectOptions?.some(
+        (option, index) => selectedOptions[activeQuestion]?.[index]
+      );
+  
+      if ((hasTables || hasUploadButtons || hasReviewSections) && isOptionSelected) {
         setActiveStep(activeStep + 1);
       } else {
-        // If no tables, upload buttons, or review sections, skip to the next step
+        // If no tables, upload buttons, or review sections, or no option selected, skip to the next step
         setActiveStep(activeStep + 2);
       }
     }
   };
-
+  
   const handleSelection = (option) => {
     const currentStep = currentQuestion?.questions[0]?.steps?.[activeStep];
 

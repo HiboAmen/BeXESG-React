@@ -18,7 +18,7 @@ function AppRoutes() {
       {/* Authentication routes */}
       <Route path="/auth/*" element={<AuthRoutes />} />
 
-      {/* ... Other routes ... */}
+     
     </Routes>
   );
 }
