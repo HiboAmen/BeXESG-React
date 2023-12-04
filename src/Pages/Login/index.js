@@ -65,7 +65,7 @@ export default function Login() {
                         <Container labelName='Password'>
                             <PrimaryInput ref={passwordRef} required type='password' name='password' />  
                         </Container>
-                        <PrimaryButton onSubmit={handleOnSubmit} $text='Continue' $loading={loading} />
+                        <PrimaryButton onSubmit={handleOnSubmit} $text='Login' $loading={loading} />
                         <div className = 'remember-me-container'>
                             <input type="checkbox" className='check-box' />
                             <span className='remember-me'> Remember me </span>

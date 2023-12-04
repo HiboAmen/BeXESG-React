@@ -146,6 +146,10 @@ function StepContainer({
       );
   
     const renderUserInputs = () => {
+      if (!userInputs || userInputs.length === 0) {
+        return null;
+      }
+  
       return userInputs.map((input, index) => (
         <p key={index}>{`User Input ${index + 1}: ${input}`}</p>
       ));
@@ -156,13 +160,14 @@ function StepContainer({
         <h4>Review Summary</h4>
         <p>Selected Option: {selectedOptionId}</p>
         {/* Render other summary details */}
-        {tablesToRender && renderDynamicContent(tablesToRender)}
+        {tablesToRender && renderTables(tablesToRender)}
         {uploadButtonsToRender && renderUploadButtons(uploadButtonsToRender)}
         {renderReviewSections()}
         {renderUserInputs()}
       </div>
     );
   };
+  
   
   const renderDynamicContent = (contentToRender) => {
     if (!contentToRender) {
