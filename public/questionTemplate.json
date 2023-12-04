@@ -341,19 +341,21 @@
             },
             {
               "id": 1,
-              "label": "Industry Licences & Permits ISO 14001",
-              "selected": false
-            },
-            {
-              "id": 2,
               "label": "Scope 3 carbon emission report (at least water bills)",
               "selected": false
             },
             {
-              "id": 3,
+              "id": 2,
               "label": "Climate Change Scenario-Based Analysis",
               "selected": false
             },
+
+            {
+              "id": 3,
+              "label": "Industry Licences & Permits ISO 14001",
+              "selected": false
+            },
+          
             {
               "id": 4,
               "label":  "No,we don't have any kind of environmental reports.",
@@ -489,7 +491,22 @@
             {
               "id": 0,
               "type": "file",
-              "label": "Environment Strategy Plan"
+              "label": "Pollution Control Report"
+            },
+            {
+              "id": 3,
+              "type": "file",
+              "label": "ISO 14001"
+            },
+            {
+              "id": 1,
+              "type": "file",
+              "label": "Last month water bills"
+            },
+            {
+              "id": 2,
+              "type": "file",
+              "label": "Climate Change Scenario-Based Analysis"
             }
             
           ],
@@ -519,678 +536,188 @@
   ]
 },
 
-{
-  "header": "ENVIRONMENTAL CRITERIA",
-  "questions": [
-{
-  "question": 4,
-  "text": "4.What activities of conservation does the company take to protect biodiversity and natural resources",
-  "steps": [
-    {
-      "step": 1,
-      "title": "Select",
-      "subTitle": "Which of these environmental certifications and reports your company have?",
-      "selectOptions": [
-        {
-          "id":0,
-          "label": "Species richness index report",
-          "selected": false
-        },
-        {
-          "id":1,
-          "label": "Number of different species present in a defined area of ecosystem",
-          "selected": false
-        },
-        {
-          "id":2,
-          "label": "Simpson index",
-          "selected": false
-        },
-        {
-          "id":3,
-          "label": "Shannon-Wiener index",
-          "selected": false
-        }
 
-      ],
-      "button": [
-        {
-          "label": "Previous",
-          "action": "previous_step"
-        },
-        {
-          "label": "Choose and Next",
-          "action": "next_step"
-        }
-      ],
-      "documentations": [] 
-    },
-    
-  {
-    "step": 3,
-    "title": "Upload",
-    "subTitle": "Kindly upload the requested documentation for the purpose of verification.",
-    "uploadButtons": [
-      {
-        "id":0,
-        "type": "file",
-        "label": "Simpson index"
-      },
-    
-      {
-        "id":1,
-        "type": "file",
-        "label": "Shannon-Wiener index"
-      }
-    ],
-    "button": [
-      {
-        "label": "Previous",
-        "action": "previous_step"
-      },
-      {
-        "label": "Submit and Review",
-        "action": "next_step"
-      }
-    ],
-    "documentations": [] 
-  },
-  {
-    "step": 4,
-    "title": "Review",
-    "subTitle": "Take a Moment to review your responses",
-    "label": "Your company has a climate change strategy or greenhouse gas reduction targets, and you must have the following documentation to support it",
-    "button": "Environment strategy plan with clear emission reduction targets and goals",
-    "text": "Below are your company's environment strategy plan:"
-  }
- 
-]
-}
-  ]
-},
+
 {
-  "header": "ENVIRONMENTAL CRITERIA",
+  "header": "SOCIAL CRITERIA",
   "questions": [
-{
-"question": 5,
-"text": "5: Is the company involved in any environmental controversies or Violations?*",
-"steps": [
-  {
-    "step": 1,
-    "title": "Select",
-    "subTitle": "Which of the Following controversies or violations does your company is Involved with?:",
-    "selectOptions": [
-      {
-        "id":0,
-        "label": "Fine of any environment.",
-        "selected": false
-      },
-      {
-        "id":1,
-        "label": "Media articles.",
-        "selected": false
-      },
-      {
-        "id":2,
-        "label": "No,we don't have any violaations.",
-        "selected": false
-      }
-    ],
-    "button": [
-      {
-        "label": "Choose and Next",
-        "action": "next_step"
-      }
-  
-    ],
-    "documentations": [] 
-  },
-  {
-    "step": 2,
-    "title": "fill up",
-    "subTitle": "Please complete the provided table with your company's environment strategy plan with clear emission reduction targets and goals",
-    "table": {
-      "id":0,
-      "title": "Table 2.1: ENVIRONMENT STRATEGY PLAN",
-      "headers": [
-        "Greenhouse gas emission",
-        "Strategies",
-        "Baseline Yr 2023 tC02e",
-        "Yr 2024 tC02e",
-        "Yr 2025 tC02e",
-        "Yr 2026 tC02e"
-      ],
-      "rows": [
+    {
+      "question":18,
+      "text": "18: Does the company promote employee health and safety?*",
+      "steps": [
         {
-          "label": "Scope 1",
-          "cells": ["", "", "", "", ""]
+          "step": 1,
+          "title": "Select",
+          "subTitle": "Kindly tick if you have the following documentation:",
+          "selectOptions": [
+            {
+              "id":0,
+              "label": "Industrial license ISO 45001 focuses on managing occupational health and safety. These include job hazards, OSHA regulatory requirements and potential emergencies.",
+              "selected": false
+            },
+            {
+              "id":1,
+              "label": "Cyber-readiness, Security and Data Privacy",
+              "selected": false
+            },
+            {
+              "id":2,
+              "label": "Environment Health Safety Report",
+              "selected": false
+            }
+          ],
+          "button": [
+            {
+              "label": "Choose and Next",
+              "action": "next_step"
+            }
+          ],
+          "documentations": [] 
         },
         {
-          "label": "Refrigerants",
-          "cells": ["", "", "", "", ""]
+          "step": 2,
+          "title": "Fill up",
+          "subTitle": "Please complete the provided table(s) with your company's monthly carbon emission data. This will allow us to determine the Table Cost tC02e as well as the Total Emission for Scope 1, 2, and 3 categories.",
+          "tables": [
+            {
+              "id":0,
+              "title": "TABLE 18.1: Cyber-readiness, Security and Data Privacy",
+              "headers": ["Cyber Security","Please pen down your Answer"],
+              "rows": [
+                {
+                  "label": "Cyber readiness(Is your company has the ability to identify, prevent, and respond to cyber threats by using what software?)",
+                  "cells":[""]
+                },
+                {
+                  "label": "Cyber security (Did you buy cyber fraud insurance?)",
+                  "cells": [""]
+                }
+                
+              ]
+            },
+            {
+              "id":1,
+              "title": "TABLE 18.2: Environment Health Safety Report",
+              "headers": ["EHS","YES/NO","Please pen down your Answer"],
+              "rows": [
+                {
+                  "label": "Are there any hazardous materials or chemicals present in the workplace, and are employees provided with proper training and safety equipment to handle them safely?)",
+                  "cells":["",""]
+                },
+                {
+                  "label": "Is the workplace properly ventilated to ensure good air quality and reduce the risk of exposure to harmful substances?",
+                  "cells": ["",""]
+                },
+                {
+                  "label": "Are there proper emergency response plans and procedures in place in case of accidents or incidents?",
+                  "cells": ["",""]
+                },
+                {
+                  "label": "Are employees provided with the necessary safety equipment, such as helmets, gloves, and safety goggles, to protect them from potential hazards?",
+                  "cells": ["",""]
+                },
+                {
+                  "label": "Are there regular inspections and maintenance checks on equipment and machinery to ensure they are in safe working condition?",
+                  "cells": ["",""]
+                },
+                {
+                  "label": "Are there regular inspections and maintenance checks on equipment and machinery to ensure they are in safe working condition?",
+                  "cells": ["",""]
+                },
+                {
+                  "label": "Are there proper signs and markings to identify hazardous areas and safety exits in the workplace?",
+                  "cells": ["",""]
+                },
+                {
+                  "label": "Is there a clear procedure for reporting and investigating accidents, injuries, and near-misses in the workplace?",
+                  "cells": ["",""]
+                },
+                {
+                  "label": "Are employees trained on how to handle and dispose of hazardous waste properly to prevent environmental contamination?",
+                  "cells": ["",""]
+                },
+                {
+                  "label": "Are there measures in place to prevent slips, trips, and falls in the workplace, such as proper flooring and clear walkways?",
+                  "cells": ["",""]
+                },
+                {
+                  "label": "Is there a comprehensive health and wellness program in place to promote the well-being of employees and prevent work-related health issues?",
+                  "cells": ["",""]
+                },
+                {
+                  "label": "Is there a comprehensive health and wellness program in place to promote the well-being of employees and prevent work-related health issues?",
+                  "cells": ["",""]
+                },
+                {
+                  "label": "Food Safety Management System (FSMS) and ISO certification (ISO 22000) consumer trust is won through the assurance of having a proper ISO 22000 certified Food Safety Management System (FSMS) in place.",
+                  "cells": ["",""]
+                },
+                {
+                  "label": "ISO 45001:2018 - Occupational Health and Safety Management Systems",
+                  "cells": ["",""]
+                }
+                
+                
+              ]
+            }
+          ],
+          "button": [
+            {
+              "label": "Previous",
+              "action": "previous_step"
+            },
+            {
+              "label": "Complete and Next",
+              "action": "next_step"
+            }
+          ],
+          "userInputs": []
         },
         {
-          "label": "Company Cars",
-          "cells": ["", "", "", "", ""]
+          "step": 3,
+          "title": "Upload",
+          "subTitle": "Kindly upload the requested documentation for the purpose of verification.",
+          "uploadButtons": [
+            {
+              "id":0,
+              "type": "file",
+              "label": "Industry ISO45001 "
+            },
+            {
+              "id":1,
+              "type": "file",
+              "label": "Cyber-readiness, Security and Data Privacy"
+            },
+            {
+              "id":2,
+              "type": "file",
+              "label": "EHS Report"
+            }
+          ],
+          "button": [
+            {
+              "label": "Previous",
+              "action": "previous_step"
+            },
+            {
+              "label": "Complete and Next",
+              "action": "next_step"
+            }
+          ],
+          "documentations": [] 
         },
         {
-          "label": "Scope 2 Electricity",
-          "cells": ["", "", "", "", ""]
-        },
-        {
-          "label": "Scope 3 Water",
-          "cells": ["", "", "", "", ""]
-        },
-        {
-          "label": "Total Emission",
-          "cells": ["", "", "", "", ""]
+          "step": 4,
+          "title": "Review",
+          "subTitle": "Take a Moment to review your responses",
+          "label": "Your company has a climate change strategy or greenhouse gas reduction targets, and you must have the following documentation to support it",
+          "button": "Environment strategy plan with clear emission reduction targets and goals",
+          "text": "Below are your company's environment strategy plan:"
         }
       ]
-    },
-    "button": [
-      {
-        "label": "Previous",
-        "action": "previous_step"
-      },
-      {
-        "label": "Complete and Next",
-        "action": "next_step"
-      }
-    ],
-    "userInputs": [] 
-  },
-  {
-    "step": 3,
-    "title": "Upload",
-    "subTitle": "Kindly upload the requested documentation for the purpose of verification.",
-    "uploadButtons": [
-      {
-        "id":0,
-        "type": "file",
-        "label": "Fines and Media Articles"
-      },
-      {
-        "id":1,
-        "type": "file",
-        "label": "Environmental Fines"
-      }
-    ],
-    "button": [
-      {
-        "label": "Previous",
-        "action": "previous_step"
-      },
-      {
-        "label": "Complete and Next",
-        "action": "next_step"
-      }
-    ],
-    "documentations": [] 
-  },
-  {
-    "step": 4,
-    "title": "Review",
-    "subTitle": "Your company is involved in the following controversies or violations",
-    "label": "Your company has a climate change strategy or greenhouse gas reduction targets, and you must have the following documentation to support it",
-    "button": "Environment strategy plan with clear emission reduction targets and goals",
-    "text": "Below are your company's environment strategy plan:"
-  }
- 
-]
-}
-  ]
-},
-
-{
-  "header": "ENVIRONMENTAL CRITERIA",
-  "questions": [
-{
-"question": 6,
-"text": "6: To what extent does economic activity prioritize,implement measures,and enable other entities to direct reduce or avoid greenhouse gas (GHG) emissions?*",
-"steps": [
-  {
-    "step": 1,
-    "title": "Select",
-    "subTitle": "Which documentation or reports detailing your company's efforts and progress do you possess?",
-    "selectOptions": [
-      {
-        "id":0,
-        "label": "Impact assessment of activities.",
-        "selected": false
-      },
-      {
-        "id":1,
-        "label": "Stakeholders engagement reports on Climate and environment operation of the company.",
-        "selected": false
-      },
-      {
-        "id":2,
-        "label": "Environment materiality assessments.",
-        "selected": false
-      }
-    ],
-    "button": [
-      {
-        "label": "Previous",
-        "action": "previous_step"
-      },
-      {
-        "label": "Choose and Next",
-        "action": "next_step"
-      }
-    ],
-    "documentations": [] 
-  },
-  {
-    "step": 2,
-    "title": "fill up",
-    "subTitle": "Please complete the provided table with your company's environment strategy plan with clear emission reduction targets and goals",
-    "table": {
-      "id":0,
-      "title": "Table 2.1: ENVIRONMENT STRATEGY PLAN",
-      "headers": [
-        "Greenhouse gas emission",
-        "Strategies",
-        "Baseline Yr 2023 tC02e",
-        "Yr 2024 tC02e",
-        "Yr 2025 tC02e",
-        "Yr 2026 tC02e"
-      ],
-      "rows": [
-        {
-          "label": "Scope 1",
-          "cells": ["", "", "", "", ""]
-        },
-        {
-          "label": "Refrigerants",
-          "cells": ["", "", "", "", ""]
-        },
-        {
-          "label": "Company Cars",
-          "cells": ["", "", "", "", ""]
-        },
-        {
-          "label": "Scope 2 Electricity",
-          "cells": ["", "", "", "", ""]
-        },
-        {
-          "label": "Scope 3 Water",
-          "cells": ["", "", "", "", ""]
-        },
-        {
-          "label": "Total Emission",
-          "cells": ["", "", "", "", ""]
-        }
-      ]
-    },
-    "button": [
-      {
-        "label": "Previous",
-        "action": "previous_step"
-      },
-      {
-        "label": "Complete and Next",
-        "action": "next_step"
-      }
-    ],
-    "userInputs": [] 
-  },
-
-  {
-    "step": 3,
-    "title": "Review",
-    "subTitle": "Take a Moment to review your responses",
-    "label": "Your company has a climate change strategy or greenhouse gas reduction targets, and you must have the following documentation to support it",
-    "button": "Environment strategy plan with clear emission reduction targets and goals",
-    "text": "Below are your company's environment strategy plan:"
-  }
- 
-]
-}
-  ]
-},
-
-{
-  "header": "ENVIRONMENTAL CRITERIA",
-  "questions": [
-{
-"question": 7,
-"text": "7: To what extent does the economic activity prioritize ad implement measures,sych as clean technologies,low-carbon tranportation options,renewable energy technologies,and waste reduction/recycleing to significantly reduce greenhouse gas(GHG) emssions compared to conventional alternatives ,as part of its transition towards(GHG) emissions compared to conventional alternatives,as part of its transition towards climate mitigation?*",
-"steps": [
-  {
-    "step": 1,
-    "title": "Select",
-    "subTitle": "Kindly tick if you have the following documentation:",
-    "selectOptions": [
-      {
-        "id":0,
-        "label": "Carbon reduction plan report.",
-        "selected": false
-      },
-      {
-        "id":1,
-        "label": "ISO 26000 Corporate Social Responsibility Accreditation.",
-        "selected": false
-      },
-      {
-        "id":2,
-        "label": "ISO 14001 Environmental Management System Certification.",
-        "selected": false
-      },
-      {
-        "id":3,
-        "label": "Technology readiness assessments.",
-        "selected": false
-      },
-      {
-        "id":4,
-        "label": "Cost saving reports.",
-        "selected": false
-      }
-
-    ],
-    "button": [
-      {
-        "label": "Previous",
-        "action": "previous_step"
-      },
-      {
-        "label": "Choose and Next",
-        "action": "next_step"
-      }
-    ],
-    "documentations": [] 
-  },
-  {
-    "step": 2,
-    "title": "fill up",
-    "subTitle": "Please complete the provided table with the information regarding your strategy for reducing carbon emissions.",
-    "table": {
-      "id":0,
-      "title": "Table 7.1: IMPACT ASSESSMENT OF ACTIVITIES ",
-      "headers": [
-        "Baseline Year",
-        "Year 1 2021",
-        "Year 2022"
-      ],
-      "rows": [
-        {
-          "label": "Reduction in office energy usage through LED and motion-controlled lighting.",
-          "cells": ["", "", "", "", ""]
-        },
-        {
-          "label": "Removal of lastic Cups across all offices.",
-          "cells": ["", "", "", "", ""]
-        },
-        {
-          "label": "Reduce paper consumption by weight(KG)",
-          "cells": ["", "", "", "", ""]
-        },
-        {
-          "label": "We Operate a waste management system(sgregation) which is acheived through separate waste bins within our offices for general,aluminium,plastics and paper(confidential waste).Here are the comparison of number of waste bins for year 1 and year 2.",
-          "cells": ["", "", "", "", ""]
-        },
-        {
-          "label": "How many tress we have planted in year 2021 and 2022?",
-          "cells": ["", "", "", "", ""]
-        }
-        
-      ]
-    },
-    "button": [
-      {
-        "label": "Previous",
-        "action": "previous_step"
-      },
-      {
-        "label": "Complete and Next",
-        "action": "next_step"
-      }
-    ],
-    "userInputs": [] 
-  },
-  {
-    "step": 3,
-    "title": "Wrie down",
-    "subTitle": "As you have mentioned earlier that your company conduct technology readiness assessments,please respond to the following question pertaining to this matter..",
-   "text":"What clean technologies is your company currently implementing to significanty reduce caron emssions in the long run,such as solar power panels and other innovative solutions?",
-   "button": [
-    {
-      "label": "Previous",
-      "action": "previous_step"
-    },
-    {
-      "label": "Complete and Next",
-      "action": "next_step"
     }
   ]
-  },
-  {
-    "step": 4,
-    "title": "Upload",
-    "subTitle": "Kindly upload the requested documentation for the purpose of verification.",
-    "uploadButtons": [
-      {
-        "id":0,
-        "type": "file",
-        "label": "Cost saving reports"
-      }
-     
-    ],
-    "button": [
-      {
-        "label": "Previous",
-        "action": "previous_step"
-      },
-      {
-        "label": "Complete and Next",
-        "action": "next_step"
-      }
-    ],
-    "documentations": [] 
-  },
-  {
-    "step": 5,
-    "title": "Review",
-    "subTitle": "Take a Moment to review your responses",
-    "label": "Your company possesses the documentation detailing the extent your company does the econmic activity prioritize and implement measures:"
-  }
- 
-]
-}
-  ]
 },
-
-
-{
-  "header": "ENVIRONMENTAL CRITERIA",
-  "questions": [
-  {
-    "question": 8,
-    "text": "8: How does your company assess and address the potential negative physical effects of climate change on your operations,sector,and broader environment?*",
-    "steps": [
-      {
-        "step": 1,
-        "title": "Select",
-        "subTitle": "An automatically marked item from the list reflects the documentation you confirmed your company possesses in previous questions.Kindly tick the other documentation your compnay has.",
-        "selectOptions": [
-          {
-            "id":0,
-            "label": "Climate Change Scenario Based Analysis",
-            "selected": false
-          },
-          {
-            "id":1,
-            "label": "Stakeholders engagement reports on Climate and environment operation of the company.",
-            "selected": false
-          },
-          {
-            "id":2,
-            "label": "Climate mitigation and adaptation report.",
-            "selected": false
-          }
-        ],
-        "button": [
-          {
-            "label": "Previous",
-            "action": "previous_step"
-          },
-          {
-            "label": "Choose and Next",
-            "action": "next_step"
-          }
-        ],
-        "documentations": [] 
-      },
-      {
-        "step": 2,
-        "title": "fill up",
-        "subTitle": "You only have to fill out Table 8.3 among the provided tables because Table 8.1 and 8.2 have already been poopulated with your initial response as they are identical tables from previous questions.",
-        "tables": [
-          {
-            "id":0,
-            "title": "Table 8.1: Climate Change Scenario Based Analysis",
-            "headers": ["Climate change conditions", "Physical Risk","Market Risk","Transition Risk","Production Risk"
-          ,"Reputation Risk","How do you overcome it in your business?"],
-            "rows": [
-              {
-                "label": "Flooding",
-                "cells": ["","","","","","",""]
-              },
-              {
-                "label": "Drought Season",
-                "cells": ["","","","","","",""]
-              },
-              {
-                "label": "How many trees have planted in the office?",
-                "cells": ["","","","","","",""]
-              },
-              {
-                "label": "Raining Season",
-                "cells": ["","","","","","",""]
-              },
-              {
-                "label": "Landslide",
-                "cells": ["","","","","","",""]
-              },
-              {
-                "label": "Haze",
-                "cells": ["","","","","","",""]
-              }
-            ]
-          },
-          {
-            "id":1,
-            "title": "Table 8.2: Stakeholders Engagement Reports",
-            "headers": [
-              "Stakeholder engagement",
-              "Mode of engagement",
-              "Topic discussion on Climate change and environment"
-            ],
-            "rows": [
-              {
-                "label": "Employee",
-                "cells": ["", ""]
-              },
-              {
-                "label": "Customers",
-                "cells": ["", ""]
-              },
-              {
-                "label": "Others-Add",
-                "cells": ["", ""]
-              }
-            ]
-          },
-          {
-            "id":2,
-            "title": "Table 8.3: CLIMATE Mitigation and adaptation report",
-            "headers": [
-              "Climate Change Conditions",
-              "Physical Risk",
-              "Market Risk",
-              "Transition Risk",
-              "Production Risk",
-              "Reputation Risk",
-              "How do you overcome it in your business?",
-              "How do you adapt the new technology through cost effective measurement to mitigate the risk?",
-              "Benefits from mitigation and adaptation"
-            ],
-            "rows": [
-              {
-                "label": "Flooding",
-                "cells": ["", "", "", "", "", ""]
-              },
-              {
-                "label": "Drought Season",
-                "cells": ["", "", "", "", "", ""]
-              },
-              {
-                "label": "Raining Season",
-                "cells": ["", "", "", "", "", ""]
-              },
-              {
-                "label": "Landslide",
-                "cells": ["", "", "", "", "", ""]
-              },
-              {
-                "label": "Haze",
-                "cells": ["", "", "", "", "", ""]
-              }
-            ]
-          }
-        ],
-        "button": [
-          {
-            "label": "Previous",
-            "action": "previous_step"
-          },
-          {
-            "label": "Complete and Next",
-            "action": "next_step"
-          }
-        ],
-        "userInputs": []
-      },
-      {
-        "step": 3,
-        "title": "Upload",
-        "subTitle": "Kindly upload the requested documentation for the purpose of verification.",
-        "uploadButtons": [
-          {
-            "id":0,
-            "type": "file",
-            "label": "Climate mitigation and adaptation report"
-          }
-        
-        ],
-        "button": [
-          {
-            "label": "Previous",
-            "action": "previous_step"
-          },
-          {
-            "label": "Complete and Next",
-            "action": "next_step"
-          }
-        ],
-        "documentations": [] 
-      },
-        
-  
-      {
-        "step": 3,
-        "title": "Review",
-        "subTitle": "Take a Moment to review your responses",
-        "label": "Your company possesses these documentation and complete its corresponding tables:"
-        
-      }
- 
-    ]
-    }
-      ]
-    },
-
 
     {
       "header": "SOCIAL CRITERIA",
@@ -1340,13 +867,12 @@
       ]
     },
   
-
-        {
-      "header": "ENVIRONMENTAL CRITERIA",
+    {
+      "header": "SOCIAL CRITERIA",
       "questions": [
         {
-          "question": 2,
-          "text": "2: Does the company have a climate change strategy or greenhouse gas reduction targets?*",
+          "question":20,
+          "text": "20. Does the company have diversity and inclusion policies?",
           "steps": [
             {
               "step": 1,
@@ -1354,13 +880,23 @@
               "subTitle": "Kindly tick if you have the following documentation:",
               "selectOptions": [
                 {
-                  "id": 0,
-                  "label": "Environmental strategy plan with clear emission reduction targets and goals. Let's start planning here.",
+                  "id":0,
+                  "label": "Diversity, Equity and Inclusion.",
                   "selected": false
                 },
                 {
-                  "id": 1,
-                  "label": "No, we don't have any kind of documentation.",
+                  "id":1,
+                  "label": "Salary ratio report",
+                  "selected": false
+                },
+                {
+                  "id":2,
+                  "label": "Demographic report",
+                  "selected": false
+                },
+                {
+                  "id":3,
+                  "label": "Employee engagement survey",
                   "selected": false
                 }
               ],
@@ -1372,53 +908,323 @@
               ],
               "documentations": [] 
             },
+            {
+              "step": 2,
+              "title": "Fill up",
+              "subTitle": "Kindly complete the following table/s:",
+              "tables": [
+                {
+                  "id":0,
+                  "title": "TABLE 20.1: Diversity, Equity and Inclusion",
+                  "headers": ["Diversity,equity,and Inclusion policies", "YES/NO","Please pen down your Answer"],
+                  "rows": [
+                    {
+                      "label": "Does the company have policies in place to promote diversity and inclusion in the workplace? (e.g., hiring practices, employee training, etc.)",
+                      "cells": ["",""]
+                    },
+                    {
+                      "label": "Are there clear guidelines on how the company addresses issues related to discrimination, harassment, and bias?",
+                      "cells": ["",""]
+                    },
+                    {
+                      "label": "How does the company ensure equal opportunities for all employees, regardless of their background?",
+                      "cells": ["",""]
+                    },
+                    {
+                      "label": "Is there a system in place to track and measure diversity and inclusion metrics within the organization?",
+                      "cells": ["",""]
+                    },
+                    {
+                      "label": "How does the company foster a culture of inclusion where everyone feels valued and respected?",
+                      "cells": ["",""]
+                    },
+                    {
+                      "label": "Are there initiatives to promote diversity at all levels of the organization, including leadership positions?",
+                      "cells": ["",""]
+                    },
+                    {
+                      "label": "Does the company provide resources and support for employees from diverse backgrounds?",
+                      "cells": ["",""]
+                    },
+                    {
+                      "label": "Are there regular diversity and inclusion training sessions for employees and management?",
+                      "cells": ["",""]
+                    },
+                    {
+                      "label": "How does the company handle and address complaints related to discrimination or inequality?",
+                      "cells": ["",""]
+                    },
+                    {
+                      "label": "Does the company have employee resource groups or affinity networks to support diverse communities?",
+                      "cells": ["",""]
+                    },
+                    {
+                      "label": "How does the company promote diversity and inclusion in its business practices, such as supplier diversity and community engagement?",
+                      "cells": ["",""]
+                    },
+                    {
+                      "label": "Are diversity and inclusion goals integrated into the company's overall business strategy and performance evaluation?",
+                      "cells": ["",""]
+                    },
+                    {
+                      "label": "Does the company conduct regular assessments and surveys to gather feedback from employees on diversity and inclusion initiatives?",
+                      "cells": ["",""]
+                    },
+                    {
+                      "label": "How does the company ensure that its leadership team is committed to promoting diversity and inclusion?",
+                      "cells": ["",""]
+                    },
+                    {
+                      "label": "Does the company communicate its diversity and inclusion efforts transparently to employees and external stakeholders?",
+                      "cells": ["",""]
+                    }
+                  ]
+                },
+                {
+                  "id":1,
+                  "title": "TABLE 20.2: Salary ratio report",
+                  "headers": ["SALARY Ratio Report","Male","Female"],
+                  "rows": [
+                    {
+                      "label": "Is there transparency regarding salary information to ensure fair and equitable pay practices?",
+                      "cells":["",""]
+                    },
+                    {
+                      "label": "Are there clear guidelines for determining salary levels, promotions, and bonuses to avoid potential biases?",
+                      "cells": ["",""]
+                    },
+                    {
+                      "label": "How does the company ensure that employees of different genders, ethnicities, and backgrounds receive equal pay for equal work?",
+                      "cells": ["",""]
+                    },
+                    {
+                      "label": "Is there a system in place to regularly review and adjust salary structures to address any disparities?",
+                      "cells": ["",""]
+                    },
+                    {
+                      "label": "How does the company promote opportunities for career growth and advancement for all employees, irrespective of their background?",
+                      "cells": ["",""]
+                    }
+                    
+                    
+                  ]
+                },
+                {
+                  "id":2,
+                  "title": "TABLE 20.3: Demographic report",
+                  "headers": ["Demographic Report","Please pen down your Answer"],
+                  "rows": [
+                    {
+                      "label": "Does the company collect demographic data from its employees to understand the diversity within the organization?",
+                      "cells":[""]
+                    },
+                    {
+                      "label": "Are employees encouraged to voluntarily provide their demographic information to help create an inclusive workplace?",
+                      "cells":[""]
+                    },
+                    {
+                      "label": "How does the company protect the privacy and confidentiality of employee demographic data?",
+                      "cells":[""]
+                    },
+                    {
+                      "label": "Does the company regularly analyze the demographic data to identify any underrepresented groups and take steps to address the imbalance?",
+                      "cells":[""]
+                    },
+                    {
+                      "label": "Is there a strategy in place to increase diversity and representation of underrepresented groups at all levels of the organization?",
+                      "cells":[""]
+                    }
+                    
+                    
+                  ]
+                },
+                {
+                  "id":3,
+                  "title": "TABLE 20.4: Employee engagement survey",
+                  "headers": ["Employee Engagement Survey","Please pen down your Answer"],
+                  "rows": [
+                    {
+                      "label": "Does the company conduct regular surveys to measure employee satisfaction, motivation, and overall engagement?",
+                      "cells":[""]
+                    },
+                    {
+                      "label": "Are employees provided with a safe and anonymous platform to share their feedback and concerns?",
+                      "cells":[""]
+                    },
+                    {
+                      "label": "How does the company take action based on the survey results to address any areas of concern and improve employee experience?",
+                      "cells":[""]
+                    },
+                    {
+                      "label": "Does the company consider the diverse needs and perspectives of its employees when designing the survey questions?",
+                      "cells":[""]
+                    },
+                    {
+                      "label": "Is there a strong focus on promoting an inclusive and supportive work environment based on the feedback received from the employee engagement survey?",
+                      "cells":[""]
+                    }
+                    
+                    
+                  ]
+                }
+              ],
+              "button": [
+                {
+                  "label": "Previous",
+                  "action": "previous_step"
+                },
+                {
+                  "label": "Complete and Next",
+                  "action": "next_step"
+                }
+              ],
+              "userInputs": []
+            },
+           
+            {
+              "step": 3,
+              "title": "Review",
+              "subTitle": "Take a Moment to review your responses",
+              "label": "Your company has a climate change strategy or greenhouse gas reduction targets, and you must have the following documentation to support it",
+              "button": "Environment strategy plan with clear emission reduction targets and goals",
+              "text": "Below are your company's environment strategy plan:"
+            }
+          ]
+          
+        }
+      ]
+    },
+
+   
+    {
+      "header": "GOVERNANCE CRITERIA",
+      "questions": [
+        {
+          "question": 22,
+          "text": "22. Does the company engage in philanthropy or community development initiatives?",
+          "steps": [
+            {
+              "step": 1,
+              "title": "Select",
+              "subTitle": "Which of these environmental certifications and reports your company have?",
+              "selectOptions": [
+                {
+                  "id":0,
+                  "label": "CSR Report",
+                  "selected": false
+                },
+                {
+                  "id":1,
+                  "label": "Social Impact assessments",
+                  "selected": false
+                },
+                {
+                  "id":2,
+                  "label": "Social Return on Investment (SROI) Analysis",
+                  "selected": false
+                }
+              ],
+              "button": [
+                {
+                  "label": "Previous",
+                  "action": "previous_step"
+                },
+                {
+                  "label": "Choose and Next",
+                  "action": "next_step"
+                }
+              ],
+              "documentations": [] 
+            },
+  
             {
               "step": 2,
               "title": "fill up",
-              "subTitle": " Please complete the provided tables to assess, prevent, and control pollution",
+              "subTitle": " Kindly complete the following table/s:",
               "tables": [
                 {
-                  "id": 0,
-                  "title": "Table 2.1: ENVIRONMENT STRATEGY PLAN",
+                  "id":0,
+                  "title": "TABLE 22.1: CSR Report",
+                  "headers": ["","YES/NO","How Many Times a Year", "Please pen down your Answer"],
+                  "rows": [
+                    {
+                      "label": "Volunteery community work ",
+                      "cells": ["","",""]
+                    },
+                    {
+                      "label": "Charity work",
+                      "cells": ["","",""]
+                    },
+                    {
+                      "label": "Foundation",
+                      "cells": ["","",""]
+                    },
+                    {
+                      "label": "ESG education program",
+                      "cells": ["","",""]
+                    }
+                  ]
+                },
+                {
+                  "id":1,
+                  "title": "Table 22.2: SCOPE 3 CARBON EMISSION REPORT",
                   "headers": [
-                    "Greenhouse gas emission",
-                    "Strategies",
-                    "Baseline Yr 2023 tC02e",
-                    "Yr 2024 tC02e",
-                    "Yr 2025 tC02e",
-                    "Yr 2026 tC02e"
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    " ",
+                    ""
                   ],
                   "rows": [
                     {
-                      "label": "Scope 1",
-                      "cells": ["", "", "", "", ""]
+                      "label": "",
+                      "cells": ["", "", "", "", "", ""]
                     },
                     {
-                      "label": "Refrigerants",
-                      "cells": ["", "", "", "", ""]
-                    },
-                    {
-                      "label": "Company Cars",
-                      "cells": ["", "", "", "", ""]
-                    },
-                    {
-                      "label": "Scope 2 Electricity",
-                      "cells": ["", "", "", "", ""]
-                    },
-                    {
-                      "label": "Scope 3 Water",
-                      "cells": ["", "", "", "", ""]
-                    },
-                    {
-                      "label": "Total Emission",
-                      "cells": ["", "", "", "", ""]
+                      "label": "",
+                      "cells": ["", "", "", "", "", ""]
                     }
-      
+                  ]
+                },
+                {
+                  "id":3,
+                  "title": "Table 22.3: CLIMATE CHANGE SCENARIO BASED ANALYSIS",
+                  "headers": [
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    "",
+                    ""
+                  ],
+                  "rows": [
+                    {
+                      "label": "",
+                      "cells": ["", "", "", "", "", ""]
+                    },
+                    {
+                      "label": "",
+                      "cells": ["", "", "", "", "", ""]
+                    },
+                    {
+                      "label": "",
+                      "cells": ["", "", "", "", "", ""]
+                    },
+                    {
+                      "label": "",
+                      "cells": ["", "", "", "", "", ""]
+                    },
+                    {
+                      "label": "",
+                      "cells": ["", "", "", "", "", ""]
+                    }
                   ]
                 }
+              ],
               
-               
-              ],
               "button": [
                 {
                   "label": "Previous",
@@ -1431,208 +1237,25 @@
               ],
               "userInputs": []
             },
-            {
-              "step": 3,
-              "title": "Upload",
-              "subTitle": "Kindly upload the requested documentation for the purpose of verification.",
-              "uploadButtons": [
-                {
-                  "id": 0,
-                  "type": "file",
-                  "label": "Environment Strategy Plan"
-                }
-                
-              ],
-              "button": [
-                {
-                  "label": "Previous",
-                  "action": "previous_step"
-                },
-                {
-                  "label": "Complete and Next",
-                  "action": "next_step"
-                }
-              ],
-              "documentations": [] 
-            },
+          
             {
               "step": 4,
               "title": "Review",
               "subTitle": "Take a Moment to review your responses",
               "label": "Your company has a climate change strategy or greenhouse gas reduction targets, and you must have the following documentation to support it",
-              "text": "Below are your company's environment strategy plan:",
-              "userSelections": [],
-              "userInputs": {},  
-              "button": [
-                {
-                  "label": "Previous",
-                  "action": "previous_step"
-                },
-                {
-                  "label": "Submit and Review",
-                  "action": "next_step"
-                }
-              ]
+              "button": "Environment strategy plan with clear emission reduction targets and goals",
+              "text": "Below are your company's environment strategy plan:"
             }
           ]
         }
-    
-       
       ]
     },
 
-  
-    {
-      "header": "SOCIAL CRITERIA",
-      "questions": [
-        {
-          "question":19,
-          "text": "19. How does the company manage labor relations and employee satisfaction?",
-          "steps": [
-            {
-              "step": 1,
-              "title": "Select",
-              "subTitle": "Kindly tick if you have the following documentation:",
-              "selectOptions": [
-                {
-                  "id": 0,
-                  "label": "Stakeholders Engagement Report ",
-                  "selected": false
-                },
-                {
-                  "id": 1,
-                  "label": "Diversity, Equity and Inclusion  ",
-                  "selected": false
-                },
-                {
-                  "id": 2,
-                  "label": "Attendance report",
-                  "selected": false
-                },
-                {
-                  "id": 3,
-                  "label": "Performance Review Report",
-                  "selected": false
-                }
 
-              ],
-              "button": [
-                {
-                  "label": "Choose and Next",
-                  "action": "next_step"
-                }
-              ],
-              "documentations": [] 
-            },
-            {
-              "step": 2,
-              "title": "Fill up",
-              "subTitle": "Kindly complete the following table/s:",
-              "tables": [
-                {
-                  "id": 0,
-                  "title": "TABLE 19.1: Stakeholders Engagement Report ",
-                  "headers": ["Key Stakeholders", "Mode of engagement"],
-                  "rows": [
-                    {
-                      "label": "Customer",
-                      "cells": [""]
-                    },
-                    {
-                      "label": "Employees",
-                      "cells": [""]
-                    }
-                  ]
-                },
-                {
-                  "id": 1,
-                  "title": "TABLE 19.2: Diversity, Equity and Inclusion  ",
-                  "headers": ["","Age", "Number"],
-                  "rows": [
-                    {
-                      "label": "Total number of employees",
-                      "cells": ["",""]
-                    },
-                    {
-                      "label": "Total number of male employees",
-                      "cells": ["",""]
-                    },
-                    {
-                      "label": "Total number of female employees",
-                      "cells": ["",""]
-                    }
-                   
-                  ]
-                }
-              ],
-              "button": [
-                {
-                  "label": "Previous",
-                  "action": "previous_step"
-                },
-                {
-                  "label": "Complete and Next",
-                  "action": "next_step"
-                }
-              ],
-              "userInputs": []
-            },
-            {
-              "step": 3,
-              "title": "Upload",
-              "subTitle": "Kindly upload the requested documentation for the purpose of verification.",
-              "uploadButtons": [
-                {
-                  "id": 2,
-                  "type": "file",
-                  "label": "Attendance report "
-                },
-                {
-                  "id": 3,
-                  "type": "file",
-                  "label": "Performance Review Report"
-                }
-              ],
-              "button": [
-                {
-                  "label": "Previous",
-                  "action": "previous_step"
-                },
-                {
-                  "label": "Complete and Next",
-                  "action": "next_step"
-                }
-              ],
-              "documentations": [] 
-            },
-            {
-              "step": 4,
-              "title": "Review",
-              "subTitle": "Take a Moment to review your responses",
-              "label": "Your company has a climate change strategy or greenhouse gas reduction targets, and you must have the following documentation to support it",
-              "text": "Below are your company's environment strategy plan:",
-              "userSelections": [],
-              "userInputs": {},  
-              "button": [
-                {
-                  "label": "Previous",
-                  "action": "previous_step"
-                },
-                {
-                  "label": "Submit and Review",
-                  "action": "next_step"
-                }
-              ]
-            }
-          ]
-        }
-       
-      ]
-    },
      
   
     {
-      "header": "SOCIAL CRITERIA",
+      "header": "GOVERNACE CRITERIA",
       "questions": [
         {
           "question":23,
@@ -1769,8 +1392,9 @@
        
       ]
     },
-    {
-      "header": "SOCIAL CRITERIA",
+    
+{
+      "header": "GOVERNANCE CRITERIA",
       "questions": [
         {
           "question":24,

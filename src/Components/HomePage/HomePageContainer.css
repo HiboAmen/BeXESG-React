@@ -3,7 +3,7 @@
 .container {
   display: flex;
   gap: 10px; /* Adjust the gap between the crossboxes */
-  margin-top: 5px;
+  margin-top: 0px;
 }
 
 .left {
@@ -14,33 +14,35 @@
 
 .left h1 {
   color: #2f6461;
-  font-size: 64px;
+  font-size: 94px;
   font-family: Roboto ; /* Replace 'Your Chosen Font' with the actual font name */
   animation: fadeInUp 1s ease; /* Add animation effect */
-  margin-top: 140px;
+  margin-top: 10px;
 }
 
-.left h4 {
+.header-description {
   margin-top: 40px;
-  font-size: 20px;
-  font-family: 'Your Chosen Font', sans-serif; /* Replace 'Your Chosen Font' with the actual font name */
+  font-size: 25px;
+  font-family: Nunito; /* Replace 'Your Chosen Font' with the actual font name */
   animation: fadeInUp 1.5s ease; /* Add animation effect */
 }
 
 .left button {
-  margin-top: 20px;
-  background-color: darkgreen;
+  margin-top: 50px;
+  background-color: #4CAF50; /* Change button color to a green shade */
   color: white;
-  padding: 10px 20px;
+  padding: 12px 24px; /* Adjust padding for better button appearance */
   border: none;
   cursor: pointer;
   transition: background-color 0.3s ease;
   border-radius: 4px;
-  height: 70px;
-  font-size: 14px;
-  font-weight: bolder;
-  font-family: Montserrat; /* Replace 'Your Chosen Font' with the actual font name */
-  animation: fadeInUp 2s ease; /* Add animation effect */
+  font-size: 16px; /* Adjust font size for better visibility */
+  font-weight: bold;
+}
+
+/* Add hover effect to the button */
+.left button:hover {
+  background-color: #45a049;
 }
 
 @keyframes fadeInUp {
@@ -64,11 +66,11 @@
 
 /* Style the image to fit within the right section */
 .right img {
-  margin-top: 5px;
+  margin-top: 0px;
   margin-bottom: 10px;
   width: 100%;
   max-width: 830px;
-  height: 730px;
+  height: 765px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-top: 10px solid darkgreen;

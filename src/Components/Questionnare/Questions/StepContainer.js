@@ -11,11 +11,40 @@ function StepContainer({
   setActiveTableIndex,
   setSelectedOptions,
 }) {
+  const [questionScores, setQuestionScores] = useState(Array(questions.length).fill(0));
+
+
   const [currentInput, setCurrentInput] = useState(""); // State to handle user input
 
   const currentQuestion = questions[activeQuestion];
   const currentStep = currentQuestion?.questions[0]?.steps?.[activeStep];
 
+  const calculateScore = () => {
+    let totalScore = 0;
+  
+    questions.forEach((question, index) => {
+      const selectedOptionId = selectedOptions[index]?.findIndex(
+        (selected) => selected
+      );
+  
+      // Add the score of the selected option to the total score
+      if (selectedOptionId !== undefined && selectedOptionId !== -1) {
+        const score = question.questions[0]?.steps?.[0]?.selectOptions?.[selectedOptionId]?.score;
+        if (score !== undefined) {
+          totalScore += score;
+          // Update the score for the current question
+          setQuestionScores((prevScores) => {
+            const updatedScores = [...prevScores];
+            updatedScores[index] = totalScore;
+            return updatedScores;
+          });
+        }
+      }
+    });
+  
+    return totalScore;
+  };
+  
   const handleStepNavigation = (direction) => {
     if (direction === "previous" && activeStep > 0) {
       setActiveStep(activeStep - 1);
@@ -158,12 +187,13 @@ function StepContainer({
     return (
       <div className="review-summary">
         <h4>Review Summary</h4>
-        <p>Selected Option: {selectedOptionId}</p>
-        {/* Render other summary details */}
-        {tablesToRender && renderTables(tablesToRender)}
-        {uploadButtonsToRender && renderUploadButtons(uploadButtonsToRender)}
-        {renderReviewSections()}
-        {renderUserInputs()}
+    <p>Selected Option: {selectedOptionId}</p>
+    <p>Your Score :{activeQuestion + 1}</p>
+    {/* ... (other summary details) */}
+    {tablesToRender && renderTables(tablesToRender)}
+    {uploadButtonsToRender && renderUploadButtons(uploadButtonsToRender)}
+    {renderReviewSections()}
+    {renderUserInputs()}
       </div>
     );
   };

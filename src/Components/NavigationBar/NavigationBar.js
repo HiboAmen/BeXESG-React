@@ -1,7 +1,7 @@
 // components/NavigationBar/NavigationBar.js
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-
+import Footer from './Footer';
 function NavigationBar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -22,7 +22,10 @@ function NavigationBar() {
         <div className={`bar ${isMenuOpen ? 'active' : ''}`}></div>
         <div className={`bar ${isMenuOpen ? 'active' : ''}`}></div>
       </div>
+      <Footer/>
     </nav>
+
+   
   );
 }
 

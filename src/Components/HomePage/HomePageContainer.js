@@ -7,15 +7,17 @@ function HomePageContainer() {
     
     <div className="container">
       
-      {/* Left Side */}
+   
       <div className="left">
-        <h1>Are you fit for applying Green Loan?</h1>
-        <h4>Take the questionnaire to check and see if your company is aligned with Green Loan Principles.</h4>
-        {/* Link the button to QuestionContainer */}
-        <Link to="/Questionnaire">
-          <button>TAKE THE QUESTIONNAIRE</button>
-        </Link>
-      </div>
+  <h1>Discover Your Green Loan Eligibility</h1>
+  <p className="header-description">
+    Explore sustainability with our comprehensive questionnaire and determine if your company is ready to apply for a Green Loan.
+  </p>
+ 
+  <Link to="/Questionnaire">
+    <button>Start Evaluation</button>
+  </Link>
+</div>
 
       {/* Right Side */}
       <div className="right">
