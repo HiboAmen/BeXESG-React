@@ -849,6 +849,10 @@
 }
   ]
 },
+
+{
+  "header": "ENVIRONMENTAL CRITERIA",
+  "questions": [
 {
 "question": 7,
 "text": "7: To what extent does the economic activity prioritize ad implement measures,sych as clean technologies,low-carbon tranportation options,renewable energy technologies,and waste reduction/recycleing to significantly reduce greenhouse gas(GHG) emssions compared to conventional alternatives ,as part of its transition towards(GHG) emissions compared to conventional alternatives,as part of its transition towards climate mitigation?*",
@@ -859,22 +863,27 @@
     "subTitle": "Kindly tick if you have the following documentation:",
     "selectOptions": [
       {
+        "id":0,
         "label": "Carbon reduction plan report.",
         "selected": false
       },
       {
+        "id":1,
         "label": "ISO 26000 Corporate Social Responsibility Accreditation.",
         "selected": false
       },
       {
+        "id":2,
         "label": "ISO 14001 Environmental Management System Certification.",
         "selected": false
       },
       {
+        "id":3,
         "label": "Technology readiness assessments.",
         "selected": false
       },
       {
+        "id":4,
         "label": "Cost saving reports.",
         "selected": false
       }
@@ -897,6 +906,7 @@
     "title": "fill up",
     "subTitle": "Please complete the provided table with the information regarding your strategy for reducing carbon emissions.",
     "table": {
+      "id":0,
       "title": "Table 7.1: IMPACT ASSESSMENT OF ACTIVITIES ",
       "headers": [
         "Baseline Year",
@@ -961,15 +971,11 @@
     "subTitle": "Kindly upload the requested documentation for the purpose of verification.",
     "uploadButtons": [
       {
-        "id": "file-upload-scope3",
+        "id":0,
         "type": "file",
         "label": "Cost saving reports"
-      },
-      {
-        "id": "file-upload-scope4",
-        "type": "file",
-        "label": "XYZ Company_Cost saving reports"
       }
+     
     ],
     "button": [
       {
@@ -984,13 +990,21 @@
     "documentations": [] 
   },
   {
-    "step": 4,
+    "step": 5,
     "title": "Review",
     "subTitle": "Take a Moment to review your responses",
     "label": "Your company possesses the documentation detailing the extent your company does the econmic activity prioritize and implement measures:"
   }
+ 
+]
+}
   ]
 },
+
+
+{
+  "header": "ENVIRONMENTAL CRITERIA",
+  "questions": [
   {
     "question": 8,
     "text": "8: How does your company assess and address the potential negative physical effects of climate change on your operations,sector,and broader environment?*",
@@ -1001,14 +1015,17 @@
         "subTitle": "An automatically marked item from the list reflects the documentation you confirmed your company possesses in previous questions.Kindly tick the other documentation your compnay has.",
         "selectOptions": [
           {
+            "id":0,
             "label": "Climate Change Scenario Based Analysis",
             "selected": false
           },
           {
+            "id":1,
             "label": "Stakeholders engagement reports on Climate and environment operation of the company.",
             "selected": false
           },
           {
+            "id":2,
             "label": "Climate mitigation and adaptation report.",
             "selected": false
           }
@@ -1031,6 +1048,7 @@
         "subTitle": "You only have to fill out Table 8.3 among the provided tables because Table 8.1 and 8.2 have already been poopulated with your initial response as they are identical tables from previous questions.",
         "tables": [
           {
+            "id":0,
             "title": "Table 8.1: Climate Change Scenario Based Analysis",
             "headers": ["Climate change conditions", "Physical Risk","Market Risk","Transition Risk","Production Risk"
           ,"Reputation Risk","How do you overcome it in your business?"],
@@ -1062,6 +1080,7 @@
             ]
           },
           {
+            "id":1,
             "title": "Table 8.2: Stakeholders Engagement Reports",
             "headers": [
               "Stakeholder engagement",
@@ -1084,6 +1103,7 @@
             ]
           },
           {
+            "id":2,
             "title": "Table 8.3: CLIMATE Mitigation and adaptation report",
             "headers": [
               "Climate Change Conditions",
@@ -1138,7 +1158,7 @@
         "subTitle": "Kindly upload the requested documentation for the purpose of verification.",
         "uploadButtons": [
           {
-            "id": "file-upload-scope3",
+            "id":0,
             "type": "file",
             "label": "Climate mitigation and adaptation report"
           }
@@ -1165,9 +1185,11 @@
         "label": "Your company possesses these documentation and complete its corresponding tables:"
         
       }
+ 
     ]
-  },
-
+    }
+      ]
+    },
 
 
     {
