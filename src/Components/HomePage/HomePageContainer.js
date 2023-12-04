@@ -19,7 +19,7 @@ function HomePageContainer() {
 
       {/* Right Side */}
       <div className="right">
-        <img src="https://i.pinimg.com/564x/f1/83/dd/f183dd5c2874685aefa0256f6eeb17ee.jpg" alt="Green Loan" />
+        <img src="https://i.pinimg.com/564x/a8/e5/c5/a8e5c5f756ad1179e194bc3205d8b144.jpg" alt="Green Loan" />
       </div>
     </div>
   );

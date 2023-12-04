@@ -49,6 +49,7 @@ export default function Login() {
     
 
     return (
+        <div className='Content'>
         <div className='login-crossbox'>
         <div className='login-container'>
             <div className='login-form-container'>
@@ -83,6 +84,7 @@ export default function Login() {
                
             </div>
            
+        </div>
         </div>
         <WatsonAssistantChat/>
         </div>

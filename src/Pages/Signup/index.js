@@ -45,6 +45,7 @@ export default function Signup() {
     }
 
     return (
+        <div className='Content'>
         <div className='Signup-crossbox'>
         <div className='signup-container'>
             <div className='background-image-container'>
@@ -77,8 +78,10 @@ export default function Signup() {
                 
             </div>
             </div>
+            </div>
         </div>
         <WatsonAssistantChat/>
         </div>
+
     )
 }
